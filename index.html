@@ -1,0 +1,131 @@
+<!--this is how the web browser knows this is an html doc-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin-right: 25;
+            margin-left: 25;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: Bubble;
+            src: url('Bubblegum.TTF');
+        }
+
+        @font-face {
+            font-family: Handwriting;
+            src: url('Handwriting-Regular.OTF');
+        }
+
+        h1 {
+            font-family: Bubble;
+            font-size: 50px;
+            text-shadow: 4px 4px 2px #940047;
+            text-align: center;
+            color: white;
+        }
+
+        .logo-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        #header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+
+        #title {
+            font-size: 3.5rem;
+            /* Base size; scales with viewport */
+            margin: 0;
+            white-space: nowrap;
+            /* Prevents text wrapping */
+            flex: 1;
+            /* Allows title to take available space */
+        }
+
+        #nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        #nav-buttons button {
+            padding: 15px 25px;
+            /* Button size */
+            font-size: 1.5rem;
+            font-family: Bubble;
+            /* Readable text size */
+            background-color: white;
+            /* Blue background (customize as needed) */
+            color: #FF8AC2;
+            /* White text */
+            border: none;
+            /* No border */
+            border-radius: 50px;
+            /* Rounded corners */
+            cursor: pointer;
+            /* Pointer on hover */
+            transition: background-color 0.3s;
+            /* Smooth hover effect */
+        }
+
+        #about-me {
+            padding: 10px 20px;
+            background-color: white;
+            border: none;
+            border-radius: 50px;
+            font-family: Handwriting;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin-top:20px;
+            margin-left: 75px;
+            margin-right: 75px;
+            text-align: center;
+            color:#FF8AC2;
+        }
+
+        #nav-buttons button:hover {
+            background-color: #940047;
+            /* Darker color on hover */
+        }
+    </style>
+    <title>Kim's Kreations</title>
+</head>
+
+<body style="background-color: #FF8AC2;">
+    <!--header-->
+    <header id="header-container">
+        <h1 id="title">Kim's Kreations</h1>
+        <img class="logo-img" src="logo.png" id="logo">
+    </header>
+
+    <!--buttons to navigate through the page-->
+    <nav id="nav-buttons">
+        <button>Home</button>
+        <button>Cakes</button>
+        <button>Sweets</button>
+    </nav>
+
+    <!--about me section-->
+    <div id="about-me">
+        <p>Welcome to Kim's Kreations! A small, black-owned baking business located in Hampton, VA and Brockton, MA! I sell assorted sweets, including cakes, cupcakes, cookies. Use the navigation buttons above to look around, and place an order! </p>
+    </div>
+
+</body>
+
+</html>
